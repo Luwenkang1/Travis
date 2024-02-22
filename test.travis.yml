@@ -1,0 +1,10 @@
+os:
+  - windows
+
+language: node_js
+node_js:
+  - 17
+install:
+  - npm install -g apifox-cli
+script:
+  - apifox run apifox run http://192.168.10.208:5777/api/v1/projects/345197/api-test/ci-config/345120/detail?token=xb6Jxe3xlA17YBRnCToZPw -r html,cli  -b
